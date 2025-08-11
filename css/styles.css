@@ -240,6 +240,13 @@ a {
   transition: border-color 0.3s ease;
 }
 
+.header-socials-icon,
+.footer-socials-icon {
+  width: 44px;
+  height: 44px;
+}
+
+
 .social-links a:hover {
   border-color: var(--primary-green);
 }
@@ -718,18 +725,6 @@ a {
   margin-bottom: 16px;
 }
 
-.teacher-card:nth-child(2) .teacher-avatar {
-  background-color: rgb(212, 178, 175);
-}
-
-.teacher-card:nth-child(3) .teacher-avatar {
-  background-color: rgb(223, 204, 159);
-}
-
-.teacher-card:nth-child(4) .teacher-avatar {
-  background-color: rgb(209, 223, 195);
-}
-
 .teacher-name {
   font-size: 20px;
   font-weight: 700;
@@ -1043,4 +1038,11 @@ a {
   .footer-bottom {
     flex-direction: column;
   }
+}
+
+.icons-container svg {
+  width: 50px;
+  height: 50px;
+  fill: orange;
+  background: skyblue;
 }
