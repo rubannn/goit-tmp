@@ -11,10 +11,11 @@
   --background-grey: #f3f5f6;
   --border-light: rgba(18, 20, 23, 0.1);
   --border-dark: rgba(255, 255, 255, 0.1);
+  --basic-font: 'Manrope', sans-serif;
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--basic-font);
   background-color: var(--background-light);
   color: var(--dark-text);
   margin: 0;
@@ -259,7 +260,7 @@ a {
   margin-bottom: 32px;
 }
 
-.hero-title .highlight {
+.highlight {
   color: var(--light-green-1);
 }
 
@@ -407,9 +408,40 @@ a {
 /* CSS for section section:lessons */
 .pricing-cards-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
-  flex-wrap: wrap;
+}
+
+@media (min-width: 1025px) {
+  .pricing-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc((100% - 2*32px) / 3);
+  }
+}
+
+/* Tablet: 2 колонки */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pricing-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .pricing-card:last-child:nth-child(odd) {
+    margin-right: auto;
+    flex-grow: 0;
+  }
+}
+
+/* Mobile: 1 колонка */
+@media (max-width: 767px) {
+  .pricing-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+  }
 }
 
 .pricing-card {
@@ -527,11 +559,6 @@ a {
   margin-bottom: 64px;
 }
 
-.master-title .highlight {
-  font-style: italic;
-  /* color: var(--light-green-1); */
-}
-
 .master-content-box {
   background-color: var(--background-light);
   border-radius: 30px;
@@ -640,8 +667,8 @@ a {
 
 /* CSS for section section:teachers */
 .teachers-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
 
@@ -651,6 +678,37 @@ a {
   align-items: center;
   text-align: center;
 }
+
+/* Desktop: 4 колонки */
+@media (min-width: 1025px) {
+  .teacher-card {
+    flex: 1 1 calc(25% - 32px);
+  }
+}
+
+/* Tablet: 2 колонки */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-wrapper {
+    width: 704px;
+  }
+
+  .teacher-card {
+    flex: 1 1 calc((100% - 32px) / 2);
+  }
+}
+
+/* Mobile: 1 колонка */
+@media (max-width: 767px) {
+  .teachers-container {
+    gap: 40px;
+    width: 335px;
+  }
+
+  .teacher-card {
+    flex: 1 1 100%;
+  }
+}
+
 
 .teacher-avatar {
   width: 150px;
@@ -752,7 +810,7 @@ a {
   padding: 16px 18px;
   border: 1px solid var(--border-light);
   border-radius: 12px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--basic-font);
   font-size: 16px;
   line-height: 24px;
 }
