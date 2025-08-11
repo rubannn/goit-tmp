@@ -16,6 +16,63 @@
 </head>
 
 <body>
+  <div class="icons-container">
+    <!-- Иконка прокрутки вниз -->
+    <svg class="icon" aria-label="scroll down icon">
+      <use href="./images/icons.svg#icon-scroll-down"></use>
+    </svg>
+
+    <!-- Иконка закрытия (крестик) -->
+    <svg class="icon" aria-label="close icon">
+      <use href="./images/icons.svg#icon-x-close"></use>
+    </svg>
+
+    <!-- Иконка меню -->
+    <svg class="icon" aria-label="menu icon">
+      <use href="./images/icons.svg#icon-menu"></use>
+    </svg>
+
+    <!-- Мини-иконка меню -->
+    <svg class="icon" aria-label="mini menu icon">
+      <use href="./images/icons.svg#icon-menu-mini"></use>
+    </svg>
+
+    <!-- Иконка YouTube -->
+    <svg class="icon" aria-label="youtube icon">
+      <use href="./images/icons.svg#icon-youtube"></use>
+    </svg>
+
+    <!-- Иконка Instagram -->
+    <svg class="icon" aria-label="instagram icon">
+      <use href="./images/icons.svg#icon-instagram"></use>
+    </svg>
+
+    <!-- Иконка Facebook -->
+    <svg class="icon" aria-label="facebook icon">
+      <use href="./images/icons.svg#icon-facebook"></use>
+    </svg>
+
+    <!-- Иконка галочки -->
+    <svg class="icon" aria-label="check icon">
+      <use href="./images/icons.svg#icon-check"></use>
+    </svg>
+
+    <!-- Мобильная иконка галочки -->
+    <svg class="icon" aria-label="mobile check icon">
+      <use href="./images/icons.svg#icon-check-mob"></use>
+    </svg>
+
+    <!-- Иконка закрытого крестика -->
+    <svg class="icon" aria-label="cross closed icon">
+      <use href="./images/icons.svg#icon-cross-closed"></use>
+    </svg>
+
+    <!-- Иконка согласия -->
+    <svg class="icon" aria-label="agree icon">
+      <use href="./images/icons.svg#icon-agree"></use>
+    </svg>
+
+  </div>
   <header class="site-header">
     <div class="header-content">
       <a href="#" class="logo">english<span class="logo-dot">excellence</span>.</a>
@@ -29,9 +86,21 @@
         </ul>
       </nav>
       <div class="social-links">
-        <a href="#" aria-label="Facebook"><img src="./images/icons.svg#icon-facebook" alt="Facebook"></a>
-        <a href="#" aria-label="Instagram"><img src="./images/icons.svg#icon-instagram" alt="Instagram"></a>
-        <a href="#" aria-label="YouTube"><img src="./images/icons.svg#icon-youtube" alt="YouTube"></a>
+        <a href="https://www.facebook.com/" aria-label="Facebook">
+          <svg class="header-socials-icon" aria-label="facebook icon">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/" aria-label="Instagram">
+          <svg class="header-socials-icon" aria-label="instagram icon">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/" aria-label="YouTube">
+          <svg class="header-socials-icon" aria-label="youtube icon">
+            <use href="./images/icons.svg#icon-youtube"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </header>
@@ -45,9 +114,10 @@
       <a href="#contact" class="btn btn-primary">Leave an application</a>
     </div>
     <!--merged image-->
-    <a href="#about-us" class="scroll-arrow" aria-label="Scroll down">
-      <img src="./images/icons.svg#icon-goto-n" alt="" class="arrow-bg">
-      <img src="./images/icons.svg#icon-goto-a" alt="arrow down" class="arrow-icon">
+    <a href="#about-us" class="hero__button-round">
+      <svg class="hero__button-icon" width="20" height="20" aria-label="scroll down icon">
+        <use href="./images/icons.svg#icon-scroll-down"></use>
+      </svg>
     </a>
   </section>
   <section id="about-us">
@@ -173,25 +243,29 @@
       </div>
       <div class="teachers-container">
         <article class="teacher-card">
-          <img src="./images/teachers/maria.png" alt="Teacher Maria" class="teacher-avatar">
+          <img srcset="./images/teachers/maria-2x.png 2x" src="./images/teachers/maria-1x.png" alt="Teacher Maria"
+            class="teacher-avatar">
           <h3 class="teacher-name">Maria</h3>
           <p class="teacher-bio">A seasoned linguist and our primary specialist in beginner-level instruction, Maria
             brings warmth and patience to every class</p>
         </article>
         <article class="teacher-card">
-          <img src="./images/teachers/artem.png" alt="Teacher Artem" class="teacher-avatar">
+          <img srcset="./images/teachers/artem-2x.png 2x" src="./images/teachers/artem-1x.png" alt="Teacher Artem"
+            class="teacher-avatar">
           <h3 class="teacher-name">Artem</h3>
           <p class="teacher-bio">With his innovative teaching techniques and a focus on interactive learning, Artem
             excels in keeping students engaged and motivated</p>
         </article>
         <article class="teacher-card">
-          <img src="./images/teachers/ilona.png" alt="Teacher Ilona" class="teacher-avatar">
+          <img srcset="./images/ilona-2x.png 2x" src="./images/teachers/ilona-1x.png" alt="Teacher Ilona"
+            class="teacher-avatar">
           <h3 class="teacher-name">Ilona</h3>
           <p class="teacher-bio">A specialist in advanced English, Ilona provides intensive instruction, ensuring
             students gain confidence in complex language tasks</p>
         </article>
         <article class="teacher-card">
-          <img src="./images/teachers/volodymyr.png" alt="Teacher Volodymyr" class="teacher-avatar">
+          <img srcset="./images/teachers/volodymyr-2x.png 2x" src="./images/teachers/volodymyr-1x.png"
+            alt="Teacher Volodymyr" class="teacher-avatar">
           <h3 class="teacher-name">Volodymyr</h3>
           <p class="teacher-bio">Our expert in English for specific purposes, Volodymyr tailors his approach to meet
             individual career and industry-specific language needs</p>
@@ -312,9 +386,21 @@
         </div>
         <div class="footer-col footer-col-social">
           <div class="social-links">
-            <a href="#" aria-label="Facebook"><img src="./images/icons.svg#icon-facebook" alt="Facebook"></a>
-            <a href="#" aria-label="Instagram"><img src="./images/icons.svg#icon-instagram" alt="Instagram"></a>
-            <a href="#" aria-label="YouTube"><img src="./images/icons.svg#icon-youtube" alt="YouTube"></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+              <svg class="footer-socials-icon" aria-label="facebook icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <svg class="footer-socials-icon" aria-label="instagram icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+              <svg class="footer-socials-icon" aria-label="youtube icon">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
